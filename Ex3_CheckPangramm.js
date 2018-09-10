@@ -1,7 +1,7 @@
 function isPangram(str) {
-    var s = str.toLowerCase();
-    var letters = "abcdefghijklmnopqrstuvwxyz";
-    for (var i = 0; i < 26; i++)
+    let s = str.toLowerCase();
+    let letters = "abcdefghijklmnopqrstuvwxyz";
+    for (let i = 0; i < 26; i++)
         if (s.indexOf(letters.charAt(i)) == -1)
             return false;
     return true;
