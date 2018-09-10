@@ -1,11 +1,11 @@
-function isPangramm(string_input) {
-    let allLetters = "abcdefghijklmnopqrstuvwxyz".split("");
-    let stringLetters = string_input.toLowerCase().split("");
-
-
-    for ( var i = 0; i < letters.length; i++){
-       //comparing the 2 vectors. Not done yet.
-    }
+function isPangram(str) {
+    var s = str.toLowerCase();
+    var letters = "abcdefghijklmnopqrstuvwxyz";
+    for (var i = 0; i < 26; i++)
+        if (s.indexOf(letters.charAt(i)) == -1)
+            return false;
+    return true;
 }
 
-console.log(isPangramm("The quick brown fox jumps over the lazy dog"));
+
+console.log(isPangram("The quick brown fox jumps over the lazy dog"));
